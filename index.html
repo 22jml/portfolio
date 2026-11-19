@@ -53,7 +53,9 @@ a{color:var(--accent)}
 .hero h1 span:nth-child(2){animation-delay:.08s}
 @keyframes rise{from{transform:translateY(18px);opacity:.0001}}
 .hero .tag{margin-top:18px;color:#4E5560}
-.hero .lead{margin:22px auto 0;max-width:56ch;color:var(--muted);font-size:16px}
+.hero .lead{margin:22px auto 0;max-width:none;color:var(--muted);font-size:16px;line-height:1.85}
+.hero .lead span{display:block}
+@media (min-width:760px){.hero .lead span{white-space:nowrap}}
 
 /* work grid */
 .work{padding:30px 0 80px}
@@ -398,8 +400,8 @@ body.in-detail .detail.on{display:block}
   <section class="hero">
     <div class="wrap">
       <h1><span>LEE</span> <span>JEONGMIN</span></h1>
-      <p class="mono tag">Data / AI / Computer Engineering</p>
-      <p class="lead">데이터를 알맞게 모으고 정리해, 사람이 이해할 수 있는 결과로 만드는 일을 좋아합니다. 딥러닝 서비스를 직접 만들었고, CRM과 강의 현장에서 데이터를 다뤘습니다. 카드를 누르면 각 작업의 판단 과정을 볼 수 있습니다.</p>
+      <p class="mono tag">Global / Communication / Data / AI</p>
+      <p class="lead"><span>사람을 이해하는 커뮤니케이션, 문제를 해결하는 데이터, 가능성을 확장하는 AI를 공부해 왔습니다.</span><span>글로벌 환경에서 쌓은 소통 역량과 컴퓨터공학 기반의 기술 역량을 갖추고 있습니다.</span><span>사람과 기술을 연결하며 국경과 분야를 넘어 가치를 만드는 인재로 성장하고자 합니다.</span></p>
     </div>
   </section>
 
